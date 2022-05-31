@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./login.css">	
+    	
+</head>
+<body>
+    
+    <div class="home" >
+        <button class="home1" onclick="myFunction()">Home</button>
+    </div>
+    
+    <section class="forms-section">
+            
+        <h1 class="section-title">Workify :) </h1>
+        <div class="forms">
+          <div class="form-wrapper is-active">
+            <button type="button" class="switcher switcher-login">Login<span class="underline"></span></button>            
+            <form  action="LoginConfirm.jsp" class="form form-login">
+              <fieldset>
+                <legend>Please, enter your mobile and password for login.</legend>
+                <div class="input-block">
+                  <label for="login-email">Mobile</label>
+                  <input id="mobile" type="number" name="mobile1"  required>
+                </div>
+                <div class="input-block">
+                  <label for="login-password">Password</label>
+                  <input id="login-password" type="password" name="password1" minlength="8" required>
+                </div>
+                <div class="input-block">
+                    <label for="Contractor">Worker</label>
+                    <input type="radio" name="bhang" value="work" />  
+                  </div>
+                  <div class="input-block">
+                    <label for="Contractor">Contractor</label>             
+                    <input type="radio" name="bhang" value="cont" />
+                  </div>
+              </fieldset>
+              <button type="submit"  class="btn-login">Login</button>
+            </form>
+          </div>
+                    
+          <div class="form-wrapper">
+            <button type="button"  class="switcher switcher-signup">
+              Sign Up
+              <span class="underline"></span>
+            </button>
+            <form action="Main.jsp" class="form form-signup">
+              <fieldset>
+                <legend>Please, enter your email, password and password confirmation for sign up.</legend>
+                <div class="input-block">
+                  <label for="signup-email">Mobile</label>
+                  <input id="mobile" type="mobile" name="mob2" required>
+                </div>
+                <div class="input-block">
+                  <label for="signup-password">Password</label>
+                  <input id="signup-password" type="password" name="pass2" required>
+                </div>
+                <div class="input-block">
+                  <label for="signup-password-confirm">Confirm password</label>
+                  <input id="signup-password-confirm" type="password" name="pass3" required>
+                </div>
+                <div class="input-block">
+                    <label for="name">Full Name</label>
+                    <input id="name" type="name" name="name2" required>
+                  </div>                                    
+                  <div class="input-block">
+                    <label for="Contractor">Worker</label>
+                    <input type="radio" name="lang" value="Official"/>  
+                  </div>
+                  <div class="input-block">
+                    <label for="Contractor">Contractor</label>             
+                    <input type="radio" name="lang" value="all" />
+                  </div>  
+                  <div class="input-block">
+                    <label for="City">City</label>
+                    <input id="City" type="city" name="city2" required>
+                  </div>
+              </fieldset>
+              <button type="submit"  class="btn-signup">Continue</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <script src="./login.js" ></script>
+</body>
+</html>
